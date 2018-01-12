@@ -1,0 +1,48 @@
+dislocker
+安装：
+git clone https://github.com/Aorimn/dislocker.git
+cd dislocker
+cmake .
+make
+
+使用：
+dislocker-fuse
+-V  加密的分区
+-k  FVEK
+-f  BEK 文件
+-p  恢复密钥
+-u  用户密码
+
+e.g.
+sudo dislocker-fuse -V encrypted.bitlocker -f /path/to/usb/file.BEK -- /mnt/ntfs
+ or :
+    sudo dislocker-fuse -V encrypted.bitlocker -uPASSWORD -- /mnt/ntfs
+ or :
+    sudo dislocker-fuse -V encrypted.bitlocker -p1536987-000000-000000-000000-000000-000000-000000-000000 -- /mnt/ntfs
+sudo mount -o loop /mnt/ntfs/dislocker-file /path/to/mount/point/
+
+
+############################################################
+
+libbde:
+安装：
+git clone https://github.com/libyal/libbde.git
+cd libbde/
+./synclibs.sh
+./autogen.sh
+(参考：https://github.com/libyal/libbde/wiki/Building)
+
+./configure
+make
+
+使用：
+bdemount
+-k FKEV:TWEAK
+-o 分区在磁盘文件里的偏移
+-p 用户密码
+-r 恢复密码
+
+e.g.
+cd bdetools/
+sudo ./bdemount -p PASSWORD win7.img /mnt/ntfs
+sudo mount -o loop,ro /mnt/ntfs/dislocker-file /path/to/mount/point/

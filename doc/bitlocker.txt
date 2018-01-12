@@ -1,0 +1,38 @@
+Dislocker : Windows Vista, 7, 8, 8.1 and 10; BitLocker-To-Go
+https://github.com/Aorimn/dislocker
+
+Libbde : Windows Vista, 7, 8 (Consumer Preview); BitLocker-To-Go
+https://github.com/libyal/libbde
+
+Volatility Plugin : Windows 7 - 10
+https://github.com/tribalchicken/volatility-bitlocker
+https://github.com/elceef/bitlocker
+https://github.com/volatilityfoundation/community/tree/master/MarcinUlikowski
+
+Recover With Scripts:
+https://github.com/bitcraft-labs/AD-Bitlocker-Recovery
+https://github.com/Microsoft/windows-itpro-docs/blob/master/windows/keep-secure/bitlocker-recovery-guide-plan.md
+
+Recover Using Vagrant(?)
+https://github.com/xpn/vagrant-recover
+
+
+
+Live Debugging on Bitlocker Windows 8.1/10
+https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-and-10/
+
+Conventional Method to Break Bitlocker
+https://articles.forensicfocus.com/2016/03/23/bitlocker-whats-new-in-windows-10-november-update-and-how-to-break-it/
+
+Using Kerberos to Defeat Bitlocker
+https://www.blackhat.com/docs/eu-15/materials/eu-15-Haken-Bypassing-Local-Windows-Authentication-To-Defeat-Full-Disk-Encryption-wp.pdf
+https://blog.ahmednabeel.com/abusing-kerberos-to-ntlm-fallback-to-defeat-windows-authentication/
+https://www.blackhat.com/docs/us-16/materials/us-16-Beery-The-Remote-Malicious-Butler-Did-It.pdf
+https://www.blackhat.com/docs/us-16/materials/us-16-Beery-The-Remote-Malicious-Butler-Did-It-wp.pdf
+
+
+
+
+Bitlocker Analysis
+Vista :   http://www.nvlabs.in/uploads/projects/nvbit/nvbit_bitlocker_presentation.pdf
+Win 7:   http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140sp/14
